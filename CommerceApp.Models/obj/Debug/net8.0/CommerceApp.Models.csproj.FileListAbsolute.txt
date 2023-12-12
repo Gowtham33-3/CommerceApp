@@ -1,0 +1,15 @@
+D:\CommerceApp\CommerceApp.Models\bin\Debug\net8.0\CommerceApp.Models.deps.json
+D:\CommerceApp\CommerceApp.Models\bin\Debug\net8.0\CommerceApp.Models.dll
+D:\CommerceApp\CommerceApp.Models\bin\Debug\net8.0\CommerceApp.Models.pdb
+D:\CommerceApp\CommerceApp.Models\bin\Debug\net8.0\CommerceApp.Utility.dll
+D:\CommerceApp\CommerceApp.Models\bin\Debug\net8.0\CommerceApp.Utility.pdb
+D:\CommerceApp\CommerceApp.Models\obj\Debug\net8.0\CommerceApp.Models.csproj.AssemblyReference.cache
+D:\CommerceApp\CommerceApp.Models\obj\Debug\net8.0\CommerceApp.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\CommerceApp\CommerceApp.Models\obj\Debug\net8.0\CommerceApp.Models.AssemblyInfoInputs.cache
+D:\CommerceApp\CommerceApp.Models\obj\Debug\net8.0\CommerceApp.Models.AssemblyInfo.cs
+D:\CommerceApp\CommerceApp.Models\obj\Debug\net8.0\CommerceApp.Models.csproj.CoreCompileInputs.cache
+D:\CommerceApp\CommerceApp.Models\obj\Debug\net8.0\CommerceApp.Models.csproj.CopyComplete
+D:\CommerceApp\CommerceApp.Models\obj\Debug\net8.0\CommerceApp.Models.dll
+D:\CommerceApp\CommerceApp.Models\obj\Debug\net8.0\refint\CommerceApp.Models.dll
+D:\CommerceApp\CommerceApp.Models\obj\Debug\net8.0\CommerceApp.Models.pdb
+D:\CommerceApp\CommerceApp.Models\obj\Debug\net8.0\ref\CommerceApp.Models.dll
