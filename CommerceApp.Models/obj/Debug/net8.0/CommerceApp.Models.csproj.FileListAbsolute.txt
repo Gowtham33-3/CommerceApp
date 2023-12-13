@@ -13,3 +13,4 @@ D:\CommerceApp\CommerceApp.Models\obj\Debug\net8.0\CommerceApp.Models.dll
 D:\CommerceApp\CommerceApp.Models\obj\Debug\net8.0\refint\CommerceApp.Models.dll
 D:\CommerceApp\CommerceApp.Models\obj\Debug\net8.0\CommerceApp.Models.pdb
 D:\CommerceApp\CommerceApp.Models\obj\Debug\net8.0\ref\CommerceApp.Models.dll
+D:\CommerceApp\CommerceApp.Models\obj\Debug\net8.0\CommerceApp.Models.sourcelink.json

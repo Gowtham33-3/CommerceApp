@@ -3,19 +3,20 @@ using CommerceApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace MyApp.Namespace
+namespace CommerceApp.Areas.Admin.Namespace
 {
+     [Area("Admin")]
     public class CategoryController : Controller
     {
-        private readonly ICategoryRepository  _CategoryRepository;
-        public CategoryController(ICategoryRepository CategoryRepository)
+        private readonly IUnitOfWork  _UnitOfWork;
+        public CategoryController(IUnitOfWork UnitOfWork)
         {
-            _CategoryRepository=CategoryRepository;
+            _UnitOfWork=UnitOfWork;
         }
         // GET: CategoryController
         public IActionResult Index()
         {
-            List<Category>ObjCategoryList = _CategoryRepository.GetAll().ToList();
+            List<Category>ObjCategoryList = _UnitOfWork.Category.GetAll().ToList();
             return View(ObjCategoryList);
         }
          public IActionResult Create()
@@ -26,8 +27,8 @@ namespace MyApp.Namespace
          public IActionResult Create(Category obj)
         {
             if(ModelState.IsValid){
-               _CategoryRepository.Add(obj);
-               _CategoryRepository.Save();
+               _UnitOfWork.Category.Add(obj);
+               _UnitOfWork.Save();
                TempData["Success"]="Category Created successfully";
                return RedirectToAction("Index","Category");
             }
@@ -40,7 +41,7 @@ namespace MyApp.Namespace
                 return NotFound();
             }
 
-          Category? FetchedCategory = _CategoryRepository.Get(u=>u.Id==id);
+          Category? FetchedCategory = _UnitOfWork.Category.Get(u=>u.Id==id);
           if(FetchedCategory==null){
             return NotFound();
           }
@@ -50,8 +51,8 @@ namespace MyApp.Namespace
          public IActionResult Edit(Category obj)
         {
             if(ModelState.IsValid){
-                _CategoryRepository.Update(obj);
-               _CategoryRepository.Save();
+                _UnitOfWork.Category.Update(obj);
+               _UnitOfWork.Save();
                TempData["Success"]="Category Updated successfully";
                 return RedirectToAction("Index","Category");
             }
@@ -63,7 +64,7 @@ namespace MyApp.Namespace
                 return NotFound();
             }
 
-          Category? FetchedCategory = _CategoryRepository.Get(u=>u.Id==id);
+          Category? FetchedCategory = _UnitOfWork.Category.Get(u=>u.Id==id);
           if(FetchedCategory==null){
             return NotFound();
           }
@@ -76,12 +77,12 @@ namespace MyApp.Namespace
                 return NotFound();
             }
 
-          Category? FetchedCategory = _CategoryRepository.Get(u=>u.Id==id);
+          Category? FetchedCategory = _UnitOfWork.Category.Get(u=>u.Id==id);
           if(FetchedCategory==null){
             return NotFound();
           }
-          _CategoryRepository.Remove(FetchedCategory);
-          _CategoryRepository.Save();
+          _UnitOfWork.Category.Remove(FetchedCategory);
+          _UnitOfWork.Save();
           TempData["Success"]="Category Deleted successfully";
           return RedirectToAction("Index","Category") ;
         }

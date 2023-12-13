@@ -9,3 +9,4 @@ D:\CommerceApp\CommerceApp.Utility\obj\Debug\net8.0\CommerceApp.Utility.dll
 D:\CommerceApp\CommerceApp.Utility\obj\Debug\net8.0\refint\CommerceApp.Utility.dll
 D:\CommerceApp\CommerceApp.Utility\obj\Debug\net8.0\CommerceApp.Utility.pdb
 D:\CommerceApp\CommerceApp.Utility\obj\Debug\net8.0\ref\CommerceApp.Utility.dll
+D:\CommerceApp\CommerceApp.Utility\obj\Debug\net8.0\CommerceApp.Utility.sourcelink.json

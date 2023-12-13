@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CommerceApp\\CommerceApp\\CommerceApp.csproj": {}
+    "D:\\CommerceApp\\CommerceAPP\\CommerceApp.csproj": {}
   },
   "projects": {
     "D:\\CommerceApp\\CommerceApp.DataAccess\\CommerceApp.DataAccess.csproj": {
@@ -188,14 +188,14 @@
         }
       }
     },
-    "D:\\CommerceApp\\CommerceApp\\CommerceApp.csproj": {
+    "D:\\CommerceApp\\CommerceAPP\\CommerceApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CommerceApp\\CommerceApp\\CommerceApp.csproj",
+        "projectUniqueName": "D:\\CommerceApp\\CommerceAPP\\CommerceApp.csproj",
         "projectName": "CommerceApp",
-        "projectPath": "D:\\CommerceApp\\CommerceApp\\CommerceApp.csproj",
+        "projectPath": "D:\\CommerceApp\\CommerceAPP\\CommerceApp.csproj",
         "packagesPath": "C:\\Users\\gowth\\.nuget\\packages\\",
-        "outputPath": "D:\\CommerceApp\\CommerceApp\\obj\\",
+        "outputPath": "D:\\CommerceApp\\CommerceAPP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gowth\\AppData\\Roaming\\NuGet\\NuGet.Config"

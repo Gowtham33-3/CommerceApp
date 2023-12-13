@@ -4,6 +4,5 @@ namespace CommerceApp.DataAccess;
 
 public interface ICategoryRepository:IRepository<Category>
 {
-   void Update(Category ccatgory);
-   void Save();
+   void Update(Category category);
 }

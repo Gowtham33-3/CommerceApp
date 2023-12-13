@@ -267,3 +267,4 @@ D:\CommerceApp\CommerceApp\obj\Debug\net8.0\refint\CommerceApp.dll
 D:\CommerceApp\CommerceApp\obj\Debug\net8.0\CommerceApp.pdb
 D:\CommerceApp\CommerceApp\obj\Debug\net8.0\CommerceApp.genruntimeconfig.cache
 D:\CommerceApp\CommerceApp\obj\Debug\net8.0\ref\CommerceApp.dll
+D:\CommerceApp\CommerceApp\obj\Debug\net8.0\CommerceApp.sourcelink.json

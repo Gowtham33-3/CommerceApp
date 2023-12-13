@@ -17,3 +17,4 @@ D:\CommerceApp\CommerceApp.DataAccess\obj\Debug\net8.0\refint\CommerceApp.DataAc
 D:\CommerceApp\CommerceApp.DataAccess\obj\Debug\net8.0\CommerceApp.DataAccess.pdb
 D:\CommerceApp\CommerceApp.DataAccess\obj\Debug\net8.0\CommerceApp.DataAccess.genruntimeconfig.cache
 D:\CommerceApp\CommerceApp.DataAccess\obj\Debug\net8.0\ref\CommerceApp.DataAccess.dll
+D:\CommerceApp\CommerceApp.DataAccess\obj\Debug\net8.0\CommerceApp.DataAccess.sourcelink.json
