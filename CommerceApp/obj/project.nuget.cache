@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LFCjjWzJVhL3CayedIwUVV+sbBAq+DmjCQU32nN4UBsdQM0EOTQpHtQa/Ig6KvZau86gDBieXm34S/y1W5KpTg==",
+  "dgSpecHash": "oqsfe5Jfv2/n0PzGpldKfzUo10H48mpsU17wUgemIlENJzgfpz0SXHqdc1kC+oT2LBJmkYS+l15o8qxH4iZsKQ==",
   "success": true,
-  "projectFilePath": "D:\\CommerceApp\\CommerceAPP\\CommerceApp.csproj",
+  "projectFilePath": "D:\\CommerceApp\\CommerceApp\\CommerceApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gowth\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\gowth\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

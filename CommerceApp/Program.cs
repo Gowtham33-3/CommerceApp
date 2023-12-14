@@ -11,6 +11,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
         b => b.MigrationsAssembly("CommerceApp.DataAccess"))); // Replace with the actual assembly name
 builder.Services.AddTransient<ICategoryRepository,CategoryRepository >();
+builder.Services.AddTransient<IProductRepository,ProductRepository >();
 builder.Services.AddTransient<IUnitOfWork,UnitOfWork>();
 var app = builder.Build();
 
