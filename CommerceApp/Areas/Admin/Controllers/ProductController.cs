@@ -1,6 +1,7 @@
 ﻿using CommerceApp.DataAccess;
 using CommerceApp.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace CommerceApp.Areas.Admin.Namespace
@@ -8,7 +9,7 @@ namespace CommerceApp.Areas.Admin.Namespace
  [Area("Admin")]
 public class ProductController: Controller
 {
-    private readonly IUnitOfWork _UnitOfWork;
+    private readonly IUnitOfWork _UnitOfWork ;
     public ProductController(IUnitOfWork UnitOfWork)
     {
         _UnitOfWork=UnitOfWork;
@@ -20,6 +21,11 @@ public class ProductController: Controller
         }
          public IActionResult Create()
         {
+           IEnumerable<SelectListItem> CategoryList = _UnitOfWork.Category.GetAll().Select(u => new SelectListItem{
+                  Text=u.Name,
+                  Value=u.Id.ToString()
+            });
+            ViewBag.CategoryList=CategoryList;
             return View();
         }
         [HttpPost]
@@ -40,11 +46,11 @@ public class ProductController: Controller
                 return NotFound();
             }
 
-          Product? FetchedCategory = _UnitOfWork.Product.Get(u=>u.Id==id);
-          if(FetchedCategory==null){
+          Product? FetchedProduct = _UnitOfWork.Product.Get(u=>u.Id==id);
+          if(FetchedProduct==null){
             return NotFound();
           }
-          return View(FetchedCategory);
+          return View(FetchedProduct);
         }
         [HttpPost]
          public IActionResult Edit(Product obj)
@@ -63,11 +69,11 @@ public class ProductController: Controller
                 return NotFound();
             }
 
-          Product? FetchedCategory = _UnitOfWork.Product.Get(u=>u.Id==id);
-          if(FetchedCategory==null){
+          Product? FetchedProduct = _UnitOfWork.Product.Get(u=>u.Id==id);
+          if(FetchedProduct==null){
             return NotFound();
           }
-          return View(FetchedCategory);
+          return View(FetchedProduct);
         }
         [HttpPost,ActionName("Delete")]
          public IActionResult DeletePost(int? id)
@@ -76,11 +82,11 @@ public class ProductController: Controller
                 return NotFound();
             }
 
-          Product? FetchedCategory = _UnitOfWork.Product.Get(u=>u.Id==id);
-          if(FetchedCategory==null){
+          Product? FetchedProduct = _UnitOfWork.Product.Get(u=>u.Id==id);
+          if(FetchedProduct==null){
             return NotFound();
           }
-          _UnitOfWork.Product.Remove(FetchedCategory);
+          _UnitOfWork.Product.Remove(FetchedProduct);
           _UnitOfWork.Save();
           TempData["Success"]="Product Deleted successfully";
           return RedirectToAction("Index","Product") ;

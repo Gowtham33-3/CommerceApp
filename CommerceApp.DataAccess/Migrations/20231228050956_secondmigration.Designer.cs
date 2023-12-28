@@ -3,6 +3,7 @@ using CommerceApp.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CommerceApp.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231228050956_secondmigration")]
+    partial class secondmigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -95,9 +98,6 @@ namespace CommerceApp.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ImageURL")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("ListPrice")
                         .HasColumnType("int");
 
@@ -128,7 +128,6 @@ namespace CommerceApp.DataAccess.Migrations
                             CategoryId = 1,
                             Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
                             ISBN = "SWD9999001",
-                            ImageURL = "",
                             ListPrice = 99,
                             Price = 90,
                             Price100 = 80,
@@ -142,7 +141,6 @@ namespace CommerceApp.DataAccess.Migrations
                             CategoryId = 2,
                             Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
                             ISBN = "CAW777777701",
-                            ImageURL = "",
                             ListPrice = 40,
                             Price = 30,
                             Price100 = 20,
@@ -156,7 +154,6 @@ namespace CommerceApp.DataAccess.Migrations
                             CategoryId = 3,
                             Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
                             ISBN = "RITO5555501",
-                            ImageURL = "",
                             ListPrice = 55,
                             Price = 50,
                             Price100 = 35,
@@ -170,7 +167,6 @@ namespace CommerceApp.DataAccess.Migrations
                             CategoryId = 4,
                             Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
                             ISBN = "WS3333333301",
-                            ImageURL = "",
                             ListPrice = 70,
                             Price = 65,
                             Price100 = 55,
@@ -184,7 +180,6 @@ namespace CommerceApp.DataAccess.Migrations
                             CategoryId = 5,
                             Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
                             ISBN = "SOTJ1111111101",
-                            ImageURL = "",
                             ListPrice = 30,
                             Price = 27,
                             Price100 = 20,
@@ -198,7 +193,6 @@ namespace CommerceApp.DataAccess.Migrations
                             CategoryId = 3,
                             Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
                             ISBN = "FOT000000001",
-                            ImageURL = "",
                             ListPrice = 25,
                             Price = 23,
                             Price100 = 20,
