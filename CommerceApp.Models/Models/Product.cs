@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Reflection.Metadata.Ecma335;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace CommerceApp.Models;
 
@@ -34,6 +35,8 @@ public int  Price100 {get; set;}
 
 public int CategoryId { get; set; }
 [ForeignKey("CategoryId")]
+[ValidateNever]
 public Category? Category { get; set; }
+[ValidateNever]
 public string? ImageURL { get; set; }
 }

@@ -268,3 +268,6 @@ D:\CommerceApp\CommerceApp\obj\Debug\net8.0\CommerceApp.pdb
 D:\CommerceApp\CommerceApp\obj\Debug\net8.0\CommerceApp.genruntimeconfig.cache
 D:\CommerceApp\CommerceApp\obj\Debug\net8.0\ref\CommerceApp.dll
 D:\CommerceApp\CommerceApp\obj\Debug\net8.0\CommerceApp.sourcelink.json
+D:\CommerceApp\CommerceApp\obj\Debug\net8.0\CommerceApp.MvcApplicationPartsAssemblyInfo.cs
+D:\CommerceApp\CommerceApp\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\CommerceApp\CommerceApp\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

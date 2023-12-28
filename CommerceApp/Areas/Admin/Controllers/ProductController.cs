@@ -1,5 +1,6 @@
 ﻿using CommerceApp.DataAccess;
 using CommerceApp.Models;
+using CommerceApp.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -25,20 +26,28 @@ public class ProductController: Controller
                   Text=u.Name,
                   Value=u.Id.ToString()
             });
-            ViewBag.CategoryList=CategoryList;
-            return View();
+             ProductVM ProductVM =new () {
+               Categorylist = CategoryList,
+                Product = new Product()
+             };
+            return View(ProductVM);
         }
         [HttpPost]
-         public IActionResult Create(Product obj)
+         public IActionResult Create(ProductVM ProductVM)
         {
             if(ModelState.IsValid){
-               _UnitOfWork.Product.Add(obj);
+               _UnitOfWork.Product.Add(ProductVM.Product);
                _UnitOfWork.Save();
                TempData["Success"]="Product Created successfully";
                return RedirectToAction("Index","Product");
+            }else{
+                ProductVM.Categorylist = _UnitOfWork.Category.GetAll().Select(u => new SelectListItem{
+                  Text=u.Name,
+                  Value=u.Id.ToString()
+            });
+             return View(ProductVM);
             }
-           
-            return View();
+          
         }
           public IActionResult Edit(int? id)
         {
