@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hO6p+0NBq4LNlsdLsvLpMgFYJDhUh7GCzQQolZzL8DU=",
+  "Hash": "Esq79wZX/sDplEXETc8HDhXHWc/AQiNRw6lvcdne2jE=",
   "Source": "CommerceApp",
   "BasePath": "_content/CommerceApp",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\CommerceApp\\CommerceApp\\wwwroot\\images\\product\\06144eea-4081-450b-8b63-793ec732efac.jpg",
+      "SourceId": "CommerceApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CommerceApp\\CommerceApp\\wwwroot\\",
+      "BasePath": "_content/CommerceApp",
+      "RelativePath": "images/product/06144eea-4081-450b-8b63-793ec732efac.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\06144eea-4081-450b-8b63-793ec732efac.jpg"
     },
     {
       "Identity": "D:\\CommerceApp\\CommerceApp\\wwwroot\\js\\site.js",
